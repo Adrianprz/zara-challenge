@@ -259,4 +259,3 @@ Puedes encontrar la cobertura en el directorio /coverage/
   - `search.test.tsx`: interacción del componente de búsqueda.
   - `useLocalStorage.test.tsx`: persistencia y tolerancia a errores de storage.
   - `cartProvider.test.tsx`: lógica del carrito (add/remove/total).
-- Para mejores matchers (`toBeInTheDocument`, etc.), habilitar `@testing-library/jest-dom` descomentando `setupFilesAfterEnv` y `jest.setup.ts`.
