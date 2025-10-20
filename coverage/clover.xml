@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1760924361615" clover="3.2.0">
+  <project timestamp="1760924361615" name="All files">
+    <metrics statements="80" coveredstatements="78" conditionals="16" coveredconditionals="16" methods="28" coveredmethods="28" elements="124" coveredelements="122" complexity="0" loc="80" ncloc="80" packages="8" files="11" classes="11"/>
+    <package name="components.Cart.utils">
+      <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <file name="calculateTotalPrice.ts" path="C:\Users\adria\Desktop\zara-challenge\src\components\Cart\utils\calculateTotalPrice.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+      </file>
+      <file name="findCartItemIndex.ts" path="C:\Users\adria\Desktop\zara-challenge\src\components\Cart\utils\findCartItemIndex.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="3" falsecount="0"/>
+      </file>
+    </package>
+    <package name="components.Search">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+      <file name="index.tsx" path="C:\Users\adria\Desktop\zara-challenge\src\components\Search\index.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="31" type="stmt"/>
+        <line num="21" count="31" type="stmt"/>
+        <line num="23" count="31" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="27" count="31" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="31" count="31" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="31" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="50" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="context">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="CartContext.tsx" path="C:\Users\adria\Desktop\zara-challenge\src\context\CartContext.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="20" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+      <file name="useDebounce.tsx" path="C:\Users\adria\Desktop\zara-challenge\src\hooks\useDebounce.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="31" type="stmt"/>
+        <line num="6" count="31" type="stmt"/>
+        <line num="7" count="21" type="stmt"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="11" count="31" type="stmt"/>
+      </file>
+      <file name="useLocalStorage.tsx" path="C:\Users\adria\Desktop\zara-challenge\src\hooks\useLocalStorage.tsx">
+        <metrics statements="14" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="4" count="19" type="stmt"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="7" count="19" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="19" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="26" count="19" type="stmt"/>
+      </file>
+    </package>
+    <package name="providers">
+      <metrics statements="25" coveredstatements="24" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="7"/>
+      <file name="CartProvider.tsx" path="C:\Users\adria\Desktop\zara-challenge\src\providers\CartProvider.tsx">
+        <metrics statements="25" coveredstatements="24" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="7"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="47" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="75" count="7" type="stmt"/>
+        <line num="77" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="schemas.Cart">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.ts" path="C:\Users\adria\Desktop\zara-challenge\src\schemas\Cart\index.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="schemas.Product">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ProductSchema.ts" path="C:\Users\adria\Desktop\zara-challenge\src\schemas\Product\ProductSchema.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.mocks">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="cart.ts" path="C:\Users\adria\Desktop\zara-challenge\src\tests\mocks\cart.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="product.ts" path="C:\Users\adria\Desktop\zara-challenge\src\tests\mocks\product.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
