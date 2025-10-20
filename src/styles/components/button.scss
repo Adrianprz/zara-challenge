@@ -8,6 +8,7 @@
   font-size: 12px;
   line-height: 16px;
   transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
+  text-transform: uppercase;
 
   &--outlined {
     background: transparent;
@@ -15,7 +16,7 @@
     color: var(--color-gray7);
 
     &:hover:not(.c-button--disabled) {
-      background: #f9fafb;
+      background: var(--color-gray9);
     }
   }
 
