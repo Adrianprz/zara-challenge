@@ -1,0 +1,114 @@
+@use "./tools" as *;
+
+.o-container {
+  margin-inline: auto;
+
+  padding-left: var(--padding-x-wrapper-mobile);
+  padding-right: var(--padding-x-wrapper-mobile);
+
+  @include respond(md) {
+    padding-left: var(--padding-x-wrapper-tablet);
+    padding-right: var(--padding-x-wrapper-tablet);
+  }
+
+  &:not(.o-section--inner) {
+    max-width: var(--wrapper);
+
+    @include respond(lg) {
+      padding-left: var(--padding-x-wrapper);
+      padding-right: var(--padding-x-wrapper);
+    }
+  }
+
+  &.o-section--inner {
+    @include respond(xl) {
+      max-width: var(--inner-wrapper);
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.o-section {
+  padding-block: 24px;
+
+  @include respond(md) {
+    padding-block: 48px;
+  }
+
+  &--inner {
+    padding-block: 0 80px;
+
+    @include respond(lg) {
+      padding-block: 110px;
+    }
+  }
+}
+
+.o-grid {
+  display: grid;
+
+  &--products {
+    grid-template-columns: 1fr;
+
+    @include respond(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(lg) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &--two {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 0 var(--section-inner-padding-tablet) 0;
+
+    @include respond(md) {
+      grid-template-columns: 337px 1fr;
+      justify-items: end;
+      gap: 55px;
+    }
+
+    @include respond(lg) {
+      grid-template-columns: 510px 1fr;
+      margin: 0 0 var(--section-inner-padding) 0;
+    }
+  }
+}
+
+.o-card {
+  outline: 0.5px solid var(--color-black);
+  padding: 16px;
+  background: var(--color-white);
+
+  &__body {
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.o-media {
+  aspect-ratio: 1 / 1;
+  position: relative;
+  margin: 0;
+  font-size: 0;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform var(--animation-timer) ease-in-out;
+  }
+}

@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "./settings" as *;
+@use "./breakpoints" as *;
+
+@mixin respond($br) {
+  $value: map.get($breakpoints, $br);
+
+  @if $value {
+    @media (min-width: #{$value}) {
+      @content;
+    }
+  } @else {
+    @warn "El breakpoint `#{$br}` no existe en el mapa `$breakpoints`.";
+  }
+}

@@ -1,0 +1,17 @@
+@use "./tools" as *;
+
+.c-status {
+  display: flex;
+  margin: 0 0 24px 0;
+
+  @include respond(lg) {
+    margin: 0 0 48px 0;
+  }
+
+  p {
+    display: flex;
+    margin: 4.5px 0;
+    color: var(--color-black);
+    font-size: 12px;
+  }
+}

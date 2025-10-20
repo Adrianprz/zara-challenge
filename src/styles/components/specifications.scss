@@ -1,0 +1,45 @@
+@use "./tools" as *;
+
+.c-specifications {
+  width: 100%;
+  margin: 0 auto var(--section-inner-padding-tablet) auto;
+
+  @include respond(lg) {
+    margin: 0 auto var(--section-inner-padding) auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      border: 1px solid var(--color-black);
+    }
+
+    td {
+      padding: 16px 8px;
+      font-size: 13px;
+    }
+  }
+  &__label {
+    width: 150px;
+    text-transform: uppercase;
+
+    @include respond(md) {
+      width: 300px;
+    }
+  }
+  &__label,
+  &__value {
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--color-black);
+  }
+}

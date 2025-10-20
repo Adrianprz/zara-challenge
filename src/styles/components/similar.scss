@@ -1,0 +1,19 @@
+@use "./tools" as *;
+
+.c-similar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @include respond(lg) {
+    margin: 0 auto var(--section-inner-padding) auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+}

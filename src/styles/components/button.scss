@@ -1,0 +1,40 @@
+.c-button {
+  width: 100%;
+  padding: 16px 31px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
+
+  &--outlined {
+    background: transparent;
+    border: 1px solid var(--color-gray8);
+    color: var(--color-gray7);
+
+    &:hover:not(.c-button--disabled) {
+      background: #f9fafb;
+    }
+  }
+
+  &--solid {
+    background: var(--color-gray7);
+    color: var(--color-white);
+
+    &:hover:not(.c-button--disabled) {
+      background: var(--color-black);
+    }
+  }
+
+  &--disabled {
+    background: var(--color-gray4);
+    color: var(--color-gray5);
+    cursor: not-allowed;
+  }
+
+  &--big {
+    padding-inline: 100px;
+  }
+}

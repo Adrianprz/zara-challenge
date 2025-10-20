@@ -1,0 +1,78 @@
+@use "./tools" as *;
+
+.c-storage-selector {
+  margin: 0 0 32px 0;
+
+  @include respond(lg) {
+    margin: 0 0 40px 0;
+  }
+
+  &__title {
+    font-weight: 300;
+    margin: 0 0 24px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+
+  &__selected {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--color-black);
+    margin: 8px 0 0 0;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__option {
+    padding: 0.5rem 1rem;
+    outline: 1px solid var(--color-gray3);
+
+    cursor: pointer;
+    border: none;
+    background: var(--color-transparent);
+
+    width: 89px;
+    height: 48px;
+
+    @include respond(lg) {
+      width: 95px;
+      height: 65px;
+    }
+
+    &--active {
+      outline: 1px solid var(--color-black);
+    }
+
+    &:hover {
+      outline: 1px solid var(--color-black);
+    }
+  }
+
+  &--small {
+    margin: 0 0 40px 0;
+
+    @include respond(lg) {
+      margin: 0 0 64px 0;
+    }
+
+    .c-storage-selector {
+      &__options {
+        gap: 16px;
+      }
+      &__option {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border: 1px solid var(--color-white);
+        outline: 1px solid var(--color-gray3);
+        &--active {
+          outline: 1px solid var(--color-black);
+        }
+      }
+    }
+  }
+}

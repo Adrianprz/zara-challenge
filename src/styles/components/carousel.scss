@@ -1,0 +1,17 @@
+.c-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1px 10px 40px 1px;
+  user-select: none;
+  cursor: pointer; // grab
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  scroll-behavior: smooth;
+
+  .o-card {
+    flex: 0 0 344px;
+    scroll-snap-align: center;
+  }
+}

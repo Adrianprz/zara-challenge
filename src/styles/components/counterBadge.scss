@@ -1,0 +1,9 @@
+.c-counter-badge {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__count { margin-left: var(--space-1); }
+}

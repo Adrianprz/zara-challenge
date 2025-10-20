@@ -1,0 +1,38 @@
+.c-search {
+  position: relative;
+  width: 100%;
+  margin: 0 0 12px 0;
+
+  &__input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid var(--color-black);
+    color: var(--color-black);
+    background: var(--color-transparent);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 8px 0;
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 0.5px solid var(--color-black);
+    }
+  }
+
+  &__clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--color-black);
+    border: none;
+    background: var(--color-transparent);
+    cursor: pointer;
+  }
+}

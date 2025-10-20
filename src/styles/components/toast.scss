@@ -1,0 +1,67 @@
+.c-toast {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 80px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px 25px;
+  background: var(--color-black);
+  border-radius: 8px;
+  animation: slideIn var(--animation-timer) ease forwards;
+
+  &__title,
+  &__message {
+    color: var(--color-white);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__message {
+    font-size: 13px;
+  }
+
+  &__close {
+    background: var(--color-transparent);
+    border: none;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+    filter: invert(1);
+  }
+
+  &--closing {
+    animation: slideOut var(--animation-timer) ease forwards;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
